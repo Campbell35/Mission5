@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "lib": ["es6"],
+    "allowJs": true,
+    "outDir": "build",
+    "rootDir": "c:/Users/campb/OneDrive/Desktop/Mission5/Mission5",
+    "strict": true,
+    "esModuleInterop": true,
+    "types": ["node", "jest"],
+    "skipLibCheck": true
+  },
+    "include": ["src/**/*", "Server/**/*"],
+    "exclude": ["src/**/*.spec.ts"]
+}
