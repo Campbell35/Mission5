@@ -1,14 +1,18 @@
-import { useState } from 'react'
-import './App.css'
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from './pages/Home'
+import PropertySearchPage from "./pages/PropertySearchPage";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      
+    <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/Property" element={<PropertySearchPage />} />
+
+    </Routes>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
