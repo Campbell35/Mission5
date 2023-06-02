@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "tsnd src/server.ts --respawn --transpile-only --exit-child",
     "test": "jest --runInBand",
-    "build": "tsc",
+    "build": "npm run build",
     "start": "node build/Server/src/server.js"
   },
   "repository": {
