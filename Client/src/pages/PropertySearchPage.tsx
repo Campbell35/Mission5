@@ -7,12 +7,20 @@ interface Property {
   location: string;
 }
 
-const properties: Property[] = [
-  { id: 1, title: 'Spacious Apartment', price: 1500, location: 'City Center' },
-  { id: 2, title: 'Cozy Cottage', price: 800, location: 'Suburb' },
-  { id: 3, title: 'Luxury Villa', price: 3000, location: 'Beachfront' },
-  // Add more properties...
-];
+const properties: Property[] = [];
+
+fetch('http://localhost:3000/api/properties')
+  .then(response => response.json())
+  .then(data => {
+    // Process the retrieved data
+    properties.push(...data);
+    console.log('Retrieved properties:', properties);
+  })
+  .catch(error => {
+    // Handle any errors
+    console.error('Error retrieving data:', error);
+  });
+
 
 const PropertySearchPage: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState('');

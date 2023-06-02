@@ -3,7 +3,7 @@ import { getProperty } from "../controllers/propertyController";
 
 const router = express.Router();
 
-router.get('/property', getProperty);
+router.get('/api/properties', getProperty);
  
 router.get('/', (req, res) => {
   res.send('Welcome to the homepage');
