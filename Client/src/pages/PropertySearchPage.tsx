@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import style from "./PropertySearchPage.module.css";
 import Header from "../components/header/Header";
 import Footer from "../components/footer/Footer";
+import Slider from "../components/slider/Slider";
 
 // interface Property {
 //   id: number;
@@ -66,7 +67,6 @@ function PropertySearchPage() {
           </div>
         </div>
       </div>
-    {/* ******************************************************************* */}
     
     <div className={style.mainDiv}>
       <div className={style.card_main_container}>
@@ -116,7 +116,7 @@ function PropertySearchPage() {
       <div className={style.popUpcontainer}>
         <div className={style.popUpcontainer_left}>
           <div className={style.popUpsliderDiv}>
-            {/* <TheSlider /> */}
+            <Slider />
           </div>
           <div className={style.popUpsliderDiv_buttons}>
             <button className={style.popUpsliderDiv_button_ONE}>CLEAR</button>
@@ -141,10 +141,89 @@ function PropertySearchPage() {
       </div>
     </div>
     </div>
+    {/* PROPERTY CARDS SECTION BELOW*/}
+    <div className={style.CARDmainDiv}>
+      <div className={style.CARDcontainer}>
+        <div className={style.CARDcardDiv}>
+          <div>
+            <img
+              className={style.CARDpropertyImage}
+              src="./images/Property1.jpg"
+              alt="property"
+              width="300"
+              height="200"
+            />
+          </div>
+          <div className={style.CARDpropertyDetails}>
+            <span className={style.CARDpropertyAddress}>
+              21/105 Kingston Street
+            </span>
+            <br />
+            <span className={style.CARDpropertyCity}>Auckland City</span>
+            <br />
+            <span className={style.CARDpropertyPrice}>$1050.00 pw</span>
+          </div>
+        </div>
+        <div className={style.CARDcardDiv}>
+          <div>
+            <img
+              className={style.CARDpropertyImage}
+              src="./images/Property2.jpg"
+              alt="property"
+              width="300"
+              height="200"
+            />
+          </div>
+          <div className={style.CARDpropertyDetails}>
+            <span className={style.CARDpropertyAddress}>5/12 Queens Rise</span>
+            <br />
+            <span className={style.CARDpropertyCity}>Auckland City</span>
+            <br />
+            <span className={style.CARDpropertyPrice}>$850.00 pw</span>
+          </div>
+        </div>
+        <div className={style.CARDcardDiv}>
+          <div>
+            <img
+              className={style.CARDpropertyImage}
+              src="./images/Property3.jpg"
+              alt="property"
+              width="300"
+              height="200"
+            />
+          </div>
+          <div className={style.CARDpropertyDetails}>
+            <span className={style.CARDpropertyAddress}>17/18 Apt B - Koff St</span>
+            <br />
+            <span className={style.CARDpropertyCity}>Mission Bay</span>
+            <br />
+            <span className={style.CARDpropertyPrice}>$1350.00 pw</span>
+          </div>
+        </div>
+        <div className={style.CARDcardDiv}>
+          <div>
+            <img
+              className={style.CARDpropertyImage}
+              src="./images/Property4.jpg"
+              alt="property"
+              width="300"
+              height="200"
+            />
+          </div>
+          <div className={style.CARDpropertyDetails}>
+            <span className={style.CARDpropertyAddress}>
+              4/17 The Spencer on Byron
+            </span>
+            <br />
+            <span className={style.CARDpropertyCity}>Takapuna</span>
+            <br />
+            <span className={style.CARDpropertyPrice}>$985.00 pw</span>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    {/* ******************************************************************* */}
-
-
+    {/* PROPERTY CARDS SECTION ABOVE*/}
       <div>
         <Footer />
       </div>
