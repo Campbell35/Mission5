@@ -3,7 +3,7 @@ import style from "./PropertySearchPage.module.css";
 import Header from "../components/header/Header";
 import Footer from "../components/footer/Footer";
 
-const MIN = 100;
+const MIN = 150;
 const MAX = 5000;
 // interface Property {
 //   id: number;
