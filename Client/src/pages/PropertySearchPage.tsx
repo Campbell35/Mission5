@@ -44,7 +44,7 @@ import Slider from "../components/slider/Slider";
 
 function PropertySearchPage() {
   return (
-    <div>
+    <div className={style.TheMain_page}>
       <div>
         <Header />
       </div>
@@ -222,7 +222,6 @@ function PropertySearchPage() {
         </div>
       </div>
     </div>
-
     {/* PROPERTY CARDS SECTION ABOVE*/}
       <div>
         <Footer />

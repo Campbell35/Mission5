@@ -289,7 +289,7 @@ input{
     margin: 20px;
     margin-right: 50px;
     text-align: center;
-    box-shadow: rgba(65, 64, 64, 0.CARD35) 0px 5px 15px;
+    box-shadow: rgba(65, 64, 64, 0.35) 0px 5px 15px;
     border-radius: 10px;
   }
   .CARDpropertyDetails{
@@ -308,5 +308,18 @@ input{
   }
   .CARDpropertyPrice {
     font-size: 15px;
+  }
+  .TheMain_page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("../assets/background1.png");
+    background-repeat: no-repeat;
+    background-attachment:scroll;
+    background-position: center center;
+    background-size: contain;
+    height: auto;
+    width: 98vw;
+    margin-top: 20px;
   }
   
