@@ -1,0 +1,74 @@
+.footer_main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #3a5053;
+    padding:25px;
+    width: 95vw;
+    height: 30vh;
+    border-radius: 10px;
+}
+.footer_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    width: 70vw;
+    height:33vh;
+    margin-right:40px;
+}
+.footer_div_left{
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    padding:20px;
+}
+.favicon_placeholder{
+    /* background-color: whitesmoke; */
+    margin-top:25px;
+    border-radius: 10px;
+}
+.footer_div_middle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:25px;
+    background-color: whitesmoke;
+    height:20vh;
+    width:15vw
+
+}
+.footer_div_right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+}
+.email_input_bar{
+    height:30px;
+    width: 97%;
+
+}
+.subscribe_button{
+    height: 40px;
+    background-color: #ef6264;
+    color:white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+}
+.news_article_one{
+    border-bottom: solid 1px black;
+    margin:25px;
+}
+.news_article_two{
+    border-bottom: solid 1px black;
+}
+.image_placeholder{
+    border: dashed 1px black;
+    margin:10px;
+}
