@@ -16,7 +16,7 @@ const NavBar: React.FC = () => {
           </a>
         </li>
         <li>
-          <a className={style.menu_item} href="/property-search">
+          <a className={style.menu_item} href="/Property">
             Rental
           </a>
         </li>

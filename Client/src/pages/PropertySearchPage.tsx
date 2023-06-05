@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import style from "./PropertySearchPage.module.css";
 import Header from "../components/header/Header";
 import Footer from "../components/footer/Footer";
-import Slider from "../components/slider/Slider";
 
+const MIN = 100;
+const MAX = 5000;
 // interface Property {
 //   id: number;
 //   title: string;
@@ -43,6 +44,15 @@ import Slider from "../components/slider/Slider";
 //   };
 
 function PropertySearchPage() {
+  const [values, setValues] = useState<[number, number]>([MIN, MAX]);
+  console.log("values:", values);
+
+  const handleSliderChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const newValue = parseInt(event.target.value);
+    setValues([MIN, newValue]);
+  
+  }
+
   return (
     <div className={style.TheMain_page}>
       <div>
@@ -116,7 +126,28 @@ function PropertySearchPage() {
       <div className={style.popUpcontainer}>
         <div className={style.popUpcontainer_left}>
           <div className={style.popUpsliderDiv}>
-            <Slider />
+            <div className={style.slider_div_main}>
+           {/* SLIDERD DIV */}
+           <div className={style.SLIDERmainDiv}>
+      <div className={style.SLIDERsliderMain}>
+        <h3>
+          Price <span>Range</span>
+        </h3>
+        <div className={style.SLIDERslider_value}>$100.00 - $5000.00</div>
+        <small>Current Range: ${values[1]}.00</small>
+
+        <input
+          type="range"
+          className={style.SLIDERtheslider}
+          onChange={handleSliderChange}
+          value={values[1]}
+          min={MIN}
+          max={MAX}
+        />
+      </div>
+    </div>
+            </div>
+            
           </div>
           <div className={style.popUpsliderDiv_buttons}>
             <button className={style.popUpsliderDiv_button_ONE}>CLEAR</button>
