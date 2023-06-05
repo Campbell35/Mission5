@@ -88,8 +88,8 @@ function PropertySearchPage() {
               <input
                 type="text"
                 placeholder="EG: Auckland"
-                // value={inputValue}
-                // onChange={handleInput}
+                value={inputValue}
+                onChange={handleInput}
               />
             </div>
 
