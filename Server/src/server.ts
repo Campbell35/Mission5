@@ -1,11 +1,13 @@
-import env from "dotenv";
-import app from "./app";
-import connectDb from "./db";
+const express = require('express')
 
-env.config()
-connectDb()
-const PORT = process.env.PORT || 3000
-app.listen(PORT, () => {
-  console.log(`server started on port ${PORT}`)
+const app = express ()
+
+app.listen(3001, ()=>{
+  console.log(`Listneing on port 3001`)
 })
+
+
+import env from "dotenv";
+// import app from "./app";
+// import connectDb from "./db";
 

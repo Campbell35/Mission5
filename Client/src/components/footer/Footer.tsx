@@ -20,14 +20,7 @@ const Footer: React.FC = () => {
               in Central Auckland but also operate around<br></br>
               the country as well as internationally.
             </span>
-            <div className={style.favicon_placeholder}>
-              <img
-                src="./images/favIcon.png"
-                alt="social media icons"
-                width="150"
-                height="40"
-              />
-            </div>
+           
           </div>
           <div className={style.footer_div_middle}>
             <span>Subscribe to our newsletter</span>

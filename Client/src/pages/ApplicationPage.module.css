@@ -136,25 +136,27 @@ font-family: 'Roboto Mono', monospace; */
     background-color: #8a3d3d;
 }
 .agentProfile_main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-family: 'Inter', sans-serif;
     font-size:20px;
     font-style: oblique;
-    line-height: 2;
     background-color:#d1e0e0d3;
     border:solid 2px #a3acac;
     border-radius: 10px;
-    padding:5px;
-    width: 30vw;
+    width: 25vw;
     height:auto;
     font-family: 'Inter', sans-serif;
     font-style: oblique;
-    padding:10px;
+    padding:20px;
 
 }
 .agentProfile_image{
     border: solid #4575537e 2px;
     box-shadow: rgba(65, 64, 64, 0.55) 0px 5px 15px;
-    margin-top:12px;
+    
+    margin-bottom:12px;
 }
 .agentProfile_button{
     

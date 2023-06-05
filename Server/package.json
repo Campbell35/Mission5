@@ -7,7 +7,7 @@
     "dev": "tsnd src/server.ts --respawn --transpile-only --exit-child",
     "test": "jest --runInBand",
     "build": "npm run build",
-    "start": "node build/Server/src/server.js"
+    "start": "nodemon build/Server/src/server.js"
   },
   "repository": {
     "type": "git",
@@ -23,6 +23,7 @@
     "express": "^4.18.2",
     "mongodb": "4.1",
     "mongoose": "^7.2.1",
+    "nodemon": "^2.0.22",
     "tsc": "^2.0.4"
   },
   "devDependencies": {
