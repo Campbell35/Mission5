@@ -1,14 +1,14 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Home from './pages/Home'
 import PropertySearchPage from "./pages/PropertySearchPage";
+import Application from "./pages/ApplicationPage";
 
 function App() {
   return (
     <>
     <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/Property" element={<PropertySearchPage />} />
+         <Route path="/Property" element={<PropertySearchPage />} />
+         <Route path="/Application" element={<Application />} />
     </Routes>
     </>
   );
