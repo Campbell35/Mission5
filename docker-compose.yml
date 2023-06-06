@@ -8,14 +8,6 @@ services:
     build: ./server
     ports:
       - 3000:3000
-    environment:
-      - MONGO_URI = 'mongodb+srv://campbellm:FqVCwukZyT6vIwNZ@mission-5-cluster.getxfqt.mongodb.net/?retryWrites=true&w=majority'
-  db:
-    image: mongo:4.0-xenial
-    ports:
-      - 27017:27017
-    volumes:
-      - Appname:/data/db
 
 volumes:
   Appname:
