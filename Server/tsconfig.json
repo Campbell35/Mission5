@@ -5,10 +5,10 @@
     "lib": ["es6"],
     "allowJs": true,
     "outDir": "build",
-    "rootDir": "c:/Users/campb/OneDrive/Desktop/Mission5/Mission5",
+    "rootDir": "C:/Users/jonop/OneDrive/Desktop/Desktop/ADV/M5",
     "strict": true,
     "esModuleInterop": true,
-    "types": ["node", "jest"],
+    "types": ["node"],
     "skipLibCheck": true
   },
     "include": ["src/**/*", "Server/**/*"],
